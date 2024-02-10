@@ -1,8 +1,6 @@
-#
-# Copyright (C) 2021 The LineageOS Project
-#
+
+# Copyright (C) 2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
-#
 
 DEVICE_PATH := device/xiaomi/umi
 
@@ -189,7 +187,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 VENDOR_SECURITY_PATCH := 2022-11-01
 
 # SELinux
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
